@@ -1,0 +1,35 @@
+GET http://localhost:3001/users
+
+
+###
+POST http://localhost:3001/users
+Content-Type: application/json
+
+{
+	"name": "kari",
+    "email": "karikaran@gmail.com",
+    "password": "test1234"
+}
+
+###
+POST http://localhost:3001/users/login
+Content-Type: application/json
+
+{
+	 
+    "email": "karikaran@gmail.com",
+    "password": "test1234"
+}
+
+
+###
+GET http://localhost:3001/users/me
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YTdjYmNjNjQ5ODFlODcxNTc5NWUiLCJpYXQiOjE2NTUyMjAxNzF9.lGuttxA52iHy3RhwHGvR4ATeQyAcojzZTn-lQUFqKJY
+
+ 
+
+
+###
+
+DELETE http://localhost:3001/users/62a839e9afb303f815d58e81

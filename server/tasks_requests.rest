@@ -1,0 +1,50 @@
+GET http://localhost:3001/tasks HTTP/1.1
+
+###
+
+POST http://localhost:3001/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4OThkYmY2MTM5MDE1NDU4NmQyMTEiLCJpYXQiOjE2NTUyMTYzNDd9.X7ei-IWBkp_q8LA7Nrz2Yxtgd_rGZvaJdAbiJ_3gbl0
+
+
+{
+	"description": "new task kumar 2"
+}
+
+###
+
+POST http://localhost:3001/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YzJlMTMwMDJmODI3NTkxMWVmNjkiLCJpYXQiOjE2NTUyMjcxMDV9.N2RoQiTXUQVuo0qjAJ7T2V3gd445mBbwFnxskInQwaI
+
+{
+	"description": "rubinish one 8 "
+}
+###
+
+DELETE http://localhost:3001/tasks/62a8a7facc64981e87157960
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YTdjYmNjNjQ5ODFlODcxNTc5NWUiLCJpYXQiOjE2NTUyMjAxNzF9.lGuttxA52iHy3RhwHGvR4ATeQyAcojzZTn-lQUFqKJY
+
+###
+
+GET http://localhost:3001/tasks/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YzJlMTMwMDJmODI3NTkxMWVmNjkiLCJpYXQiOjE2NTUyMjcxMDV9.N2RoQiTXUQVuo0qjAJ7T2V3gd445mBbwFnxskInQwaI
+
+
+###
+
+GET  http://localhost:3001/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4OWFiNGY2MTM5MDE1NDU4NmQyMTgiLCJpYXQiOjE2NTUyMTY4MjB9.ZKkKt0Qxxya5am06YCnGton7IFu1KB7kSFBOBL5KuFc
+
+
+###
+
+PUT http://localhost:3001/todo/update/62a4f0c1fbaaabc4266eb517
+Content-Type: application/json
+
+{
+	"text": "Go Shopping for Milk"
+}
