@@ -4,11 +4,12 @@ import axios from 'axios';
 
 import Login from './Login';
 import App from '../../App';
-import Home from './Home';
+import Home from './Signup';
 
 import PrivateRoute from './Utils/PrivateRoute';
 import PublicRoute from './Utils/PublicRoute';
 import { getToken, removeUserSession, setUserSession } from './Utils/Common';
+import Signup from './Signup';
 
 function Root(props) {
   const [authLoading, setAuthLoading] = useState(true);
@@ -42,14 +43,14 @@ function Root(props) {
       <BrowserRouter>
         <div>
           <div className="header">
-            <NavLink exact activeClassName="active" to="/">Home</NavLink>
+            <NavLink exact activeClassName="active" to="/">Signup</NavLink>
             <NavLink activeClassName="active" to="/login">Login</NavLink> 
             <NavLink activeClassName="active" to="/dashboard">Dashboard</NavLink> 
             <NavLink activeClassName="active" to="#"   value="Logout"> <input type="button" onClick={handleLogout} value="Logout" /></NavLink> 
           </div>
           <div className="content">
             <Switch>
-              <Route exact path="/" component={Home} />
+              <Route exact path="/" component={Signup} />
               <PublicRoute path="/login" component={Login} />
               <PrivateRoute path="/dashboard" component={App} />
             </Switch>
