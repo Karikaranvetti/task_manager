@@ -46,15 +46,8 @@ router.get("/tasks/:id", auth, async (req, res) => {
 
 router.get("/tasks/complete/:id", auth,async (req, res) => {
     const todo = await Task.findById(req.params.id);
-    // console.log(todo);
-    // todo.completed = !(todo.completed);
-    console.log(todo);
-    if(todo.completed==true){
-        todo.completed=false
-    }else{
-        todo.completed=true
-    }
-  
+     
+    todo.completed = !(todo.completed);
     todo.save();
   
     res.send(todo);

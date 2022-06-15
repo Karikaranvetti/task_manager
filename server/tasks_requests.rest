@@ -30,7 +30,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YTdjY
 
 GET http://localhost:3001/tasks/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4YzJlMTMwMDJmODI3NTkxMWVmNjkiLCJpYXQiOjE2NTUyMjcxMDV9.N2RoQiTXUQVuo0qjAJ7T2V3gd445mBbwFnxskInQwaI
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmFhMDY3OTk4ZTEzMGFmOTcxMzZhYzYiLCJpYXQiOjE2NTUzMTc4ODB9.zN7CD3NkOmd5OtjPuxUNnD70q-xWGiwtBKwaOjIEkAs
 
 
 ###
