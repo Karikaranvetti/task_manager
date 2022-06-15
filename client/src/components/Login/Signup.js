@@ -19,9 +19,9 @@ function Signup(props) {
 				"Content-Type": "application/json" 
 			},
 			body: JSON.stringify({
+        name:name.value,
 				email: email.value,
-                name:name.value,
-                password:password.value
+        password:password.value
 			})
 		}).then(res => res.json())
       .then((response) => {
