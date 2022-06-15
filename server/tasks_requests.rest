@@ -4,7 +4,7 @@ GET http://localhost:3001/tasks HTTP/1.1
 
 POST http://localhost:3001/tasks
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmE4OThkYmY2MTM5MDE1NDU4NmQyMTEiLCJpYXQiOjE2NTUyMTYzNDd9.X7ei-IWBkp_q8LA7Nrz2Yxtgd_rGZvaJdAbiJ_3gbl0
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MmFhMDY3OTk4ZTEzMGFmOTcxMzZhYzYiLCJpYXQiOjE2NTUzMTc4ODB9.zN7CD3NkOmd5OtjPuxUNnD70q-xWGiwtBKwaOjIEkAs
 
 
 {
